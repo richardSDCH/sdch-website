@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/*
+  Design tokens for SDCH Handelslösungen.
+  Adjust these to match the current site's palette/type once you
+  port over the real values — these are placeholders.
+*/
+@theme {
+  --font-display: "Fraunces", serif;
+  --color-brand-50: #eef4f9;
+  --color-brand-100: #d9e6f0;
+  --color-brand-600: #1d4e6e;
+  --color-brand-700: #163d57;
+  --color-brand-900: #0d2436;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-brand-900 antialiased;
+}
