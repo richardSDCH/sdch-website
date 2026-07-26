@@ -1,23 +1,28 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import { useLanguage } from "../i18n/LanguageContext.jsx"
 import SDCHLogo from "../../public/resources/images/SDCH_Logo_Light_Background.png"
-
-const links = [
-  { to: '/', label: 'Home', end: true },
-  { to: '/about', label: 'About' },
-  { to: '/services', label: 'Services' },
-  { to: '/contact', label: 'Contact' },
-]
+import LanguageDropdown from './LanguageDropdown.jsx'
 
 function navClass({ isActive }) {
   return [
-    'text-sm font-medium transition-colors',
-    isActive ? 'text-brand-700' : 'text-brand-900/70 hover:text-brand-700',
+    'font-medium transition-colors',
+    isActive ? 'text-slate-700' : 'text-slate-900/70 hover:text-slate-700',
   ].join(' ')
 }
 
 export default function Header() {
   const [open, setOpen] = useState(false)
+
+  const { t } = useLanguage()
+  const texts = t.header
+
+  const links = [
+    { to: '/', label: texts.home, end: true },
+    { to: '/about', label: texts.about },
+    { to: '/services', label: texts.services },
+    { to: '/contact', label: texts.contact },
+  ]
 
   return (
     <header className="border-b border-brand-100">
@@ -34,6 +39,7 @@ export default function Header() {
             </NavLink>
           ))}
         </nav>
+        <LanguageDropdown />
 
         {/* Mobile toggle */}
         <button

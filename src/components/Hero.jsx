@@ -95,7 +95,7 @@ export default function Hero() {
           <h1
             key={slide.title}
             className={[
-              'absolute max-w-5xl text-4xl font-display font-semibold tracking-tight text-white transition-opacity duration-1000 ease-in-out motion-reduce:transition-none sm:text-5xl md:text-6xl',
+              'absolute max-w-6xl text-4xl font-display font-semibold tracking-tight text-white transition-opacity duration-1000 ease-in-out motion-reduce:transition-none sm:text-5xl md:text-6xl',
               i === active ? 'opacity-100' : 'opacity-0 pointer-events-none',
             ].join(' ')}
             aria-hidden={i !== active}
