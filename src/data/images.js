@@ -15,12 +15,12 @@ export const images = {
         unsplashHref: "https://unsplash.com/photos/a-river-running-through-a-city-next-to-tall-buildings-iJX2qapTA3A?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
         alt: "The water channel at the back of Deichstrasse, in Hamburg, Germany"
     },
-    humanTech: {
-        src: "/resources/images/humanTech.png",
-        author: "Caleb Jack",
-        photoByHref: "https://unsplash.com/@hitthetrailjack?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
-        unsplashHref: "https://unsplash.com/photos/a-person-standing-in-front-of-a-wall-of-lights-NaxA1dH_JGg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
-        alt: "The silouette of a man in front of a wall pattern"
+    stairsPeople: {
+        src: "/resources/images/stairsPeople.png",
+        author: "José M Ramírez C",
+        photoByHref: "https://unsplash.com/@martinirc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+        unsplashHref: "https://unsplash.com/photos/group-of-people-walking-on-the-stairs-45sjAjSjArQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+        alt: "A crowd walking through several stairs in a building"
     },
     businessAdvice: {
         src: "/resources/images/BusinessAdvice.png",
@@ -32,16 +32,11 @@ export const images = {
         author: "Yousef Alfuhigi",
         alt: "Silhouette of a man with a carry on baggage in an airport"
     },
-    techSolutions: {
-        src: "/resources/images/TechSolutions.png",
-        author: "Kevin Ku",
-        alt: "Eyeglasses in front of a computer screen"
+    complexity: {
+        src: "/resources/images/Complexity.png",
+        author: "Annie Spratt",
+        alt: "Man working with a laptop computer"
     }
 }
-
-      
-
-
-      
 
       

@@ -1,7 +1,7 @@
-I want you to write for me a React component called <Hero> which will be the main image the user sees when she reaches the landing page. The component should have the following properties:
-
-- The width of the screen.
-- It will consist of 3 images that rotate every 4 seconds.
-- It is located just below the nav bar, and cover the whole screen on a MacBook Air.
-- At the center of the screen, there should be an <h1> with a short title.
-- There will be 3 <h1>, one for each image, such that when the image rotates, the <h1> also changes.
+<h2>We’re here to guide. Not to sell</h2>
+<h3>Empowering your financial journey</h3>
+<p>We provide tools and content to help you build a stronger relationship with money — one based on understanding, not anxiety.</p>
+<h3>No pressure, just perspective</h3>
+<p>Our goal is to offer support, not sales pitches. You’ll never be pushed toward a product — only pointed toward clarity.</p>
+<h3>Learn at your pace</h3>
+<p>Whether you’re just starting out or already exploring your next steps, we meet you where you are with insights that respect your path.</p>

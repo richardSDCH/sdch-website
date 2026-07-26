@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { useLanguage } from '../i18n/LanguageContext.jsx'
 import { images } from "../data/images";
 
 // Height of the fixed <Header /> (h-16 = 4rem). Kept in one place so
@@ -8,39 +9,39 @@ const HEADER_HEIGHT = '4rem'
 
 const ROTATE_INTERVAL_MS = 5000
 
-// Placeholder images live in public/images — swap these three files
-// for real photography (jpg/webp) and update the extensions below.
-// Keep the same variable names/shape; nothing else needs to change.
-const slides = [
-  {
-    src: images.europeMap.src,
-    alt: images.europeMap.alt,
-    title: "From Europe to everywhere, and back",
-    author: images.europeMap.author,
-    photoByHref: images.europeMap.photoByHref,
-    unsplashHref: images.europeMap.unsplashHref
-  },
-  {
-    src: images.deichstrasseChannel.src,
-    alt: images.deichstrasseChannel.alt,
-    title: "At the heart of tradition and trade",
-    author: images.deichstrasseChannel.author,
-    photoByHref: images.deichstrasseChannel.photoByHref,
-    unsplashHref: images.deichstrasseChannel.unsplashHref
-  },
-  {
-    src: images.humanTech.src,
-    alt: images.humanTech.alt,
-    title: "Tech solutions that listen first",
-    author: images.humanTech.author,
-    photoByHref: images.humanTech.photoByHref,
-    unsplashHref: images.humanTech.unsplashHref
-  },
-]
-
 export default function Hero() {
   const [active, setActive] = useState(0)
   const timerRef = useRef(null)
+
+  const { t } = useLanguage()
+  const texts = t.main.hero
+
+  const slides = [
+    {
+      src: images.europeMap.src,
+      alt: images.europeMap.alt,
+      title: texts.titles.europeMap,
+      author: images.europeMap.author,
+      photoByHref: images.europeMap.photoByHref,
+      unsplashHref: images.europeMap.unsplashHref
+    },
+    {
+      src: images.deichstrasseChannel.src,
+      alt: images.deichstrasseChannel.alt,
+      title: texts.titles.deichstrasseChannel,
+      author: images.deichstrasseChannel.author,
+      photoByHref: images.deichstrasseChannel.photoByHref,
+      unsplashHref: images.deichstrasseChannel.unsplashHref
+    },
+    {
+      src: images.stairsPeople.src,
+      alt: images.stairsPeople.alt,
+      title: texts.titles.stairsPeople,
+      author: images.stairsPeople.author,
+      photoByHref: images.stairsPeople.photoByHref,
+      unsplashHref: images.stairsPeople.unsplashHref
+    },
+  ]
 
   useEffect(() => {
     const prefersReducedMotion = window.matchMedia(
@@ -78,7 +79,7 @@ export default function Hero() {
           alt={slide.alt}
           className={[
             'absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out motion-reduce:transition-none',
-            i === active ? 'opacity-100' : 'opacity-0',
+            i === active ? 'opacity-100' : 'opacity-0 pointer-events-none',
           ].join(' ')}
           aria-hidden={i !== active}
         />
@@ -95,7 +96,7 @@ export default function Hero() {
             key={slide.title}
             className={[
               'absolute max-w-5xl text-4xl font-display font-semibold tracking-tight text-white transition-opacity duration-1000 ease-in-out motion-reduce:transition-none sm:text-5xl md:text-6xl',
-              i === active ? 'opacity-100' : 'opacity-0',
+              i === active ? 'opacity-100' : 'opacity-0 pointer-events-none',
             ].join(' ')}
             aria-hidden={i !== active}
          >
@@ -112,7 +113,7 @@ export default function Hero() {
       {/* Slide indicators */}
       <div className="absolute bottom-6 left-1/2 flex justify-between w-full -translate-x-1/2 gap-2">
         <div className="w-160"></div>
-        {slides.map((slide, i) => (
+        {/* {slides.map((slide, i) => (
             <button
               key={slide.src}
               type="button"
@@ -124,18 +125,18 @@ export default function Hero() {
                 i === active ? 'bg-white' : 'bg-white/40 hover:bg-white/70',
               ].join(' ')}
             />
-        ))}
-        <div className="w-160 flex">
+        ))} */}
+        <div className="w-160 flex pb-6">
           {slides.map((slide, i) => (
             <p 
               key={slide.author}
               className={[
                 'absolute right-10 text-sm font-display tracking-tight text-white transition-opacity duration-1000 ease-in-out motion-reduce:transition-none sm:text-xs md:text-sm',
-                i === active ? 'opacity-100' : 'opacity-0',
+                i === active ? 'opacity-100' : 'opacity-0 pointer-events-none',
               ].join(' ')}
               aria-hidden={i !== active}
             >
-              Photo by <a className="underline" href={slide.photoByHref}>{slide.author}</a> on <a className="underline" href={slide.unsplashHref}>Unsplash</a>
+             {texts.credits.photoBy} <a className="underline" href={slide.photoByHref}>{slide.author}</a> {texts.credits.on} <a className="underline" href={slide.unsplashHref}>Unsplash</a>
             </p>
           ))}
         </div>
