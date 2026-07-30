@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useLanguage } from "../i18n/LanguageContext.jsx"
-import SDCHLogo from "../../public/resources/images/SDCH_Logo_Light_Background.png"
+import SDCHLogo from "/resources/images/SDCH_Logo_Light_Background.png"
 import LanguageDropdown from './LanguageDropdown.jsx'
 
 function navClass({ isActive }) {

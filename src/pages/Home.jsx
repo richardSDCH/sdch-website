@@ -7,7 +7,7 @@ import { images } from "../data/images";
 export default function Home() {
 
   const { t } = useLanguage()
-  const texts = t.main.divisions
+  const texts = t.main.home.divisions
 
   return (
     <div>

@@ -14,7 +14,7 @@ export default function Hero() {
   const timerRef = useRef(null)
 
   const { t } = useLanguage()
-  const texts = t.main.hero
+  const texts = t.main.home.hero
 
   const slides = [
     {

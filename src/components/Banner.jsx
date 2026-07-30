@@ -3,7 +3,7 @@ import { useLanguage } from "../i18n/LanguageContext.jsx"
 export default function Banner() {
 
     const { t } = useLanguage()
-    const texts = t.main.banner
+    const texts = t.main.home.banner
 
     return (
         <>
