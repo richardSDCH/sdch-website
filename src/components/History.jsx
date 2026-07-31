@@ -22,7 +22,7 @@ export default function History() {
                 </div>
                 <div className="w-1/4">
                     <div className="w-fit">
-                    <img src={SalomonDCohenHenriquez} alt="Portrait photo of Salomon Daniel Cohen Henriquez" className="h-60 mx-auto rounded-xs"/>
+                    <img src={SalomonDCohenHenriquez} loading="lazy" alt="Portrait photo of Salomon Daniel Cohen Henriquez" className="h-60 mx-auto rounded-xs"/>
                     <h4 className="font-display font-semibold text-sm text-slate-900 mt-2">Salomon Daniel Cohen Henriquez</h4>
                     <h4 className="text-sm font-normal text-center">Curaçao 1830 - Hamburg 1908</h4>
                     </div>

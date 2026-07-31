@@ -24,7 +24,8 @@ export default function Team() {
                               className="group relative block overflow-hidden rounded-md"
                             >
                                 <img 
-                                  src={RicardoHenriquez} 
+                                  src={RicardoHenriquez}
+                                  loading="lazy"
                                   alt="Profile photo of Ricardo Henriquez" 
                                   className="w-40 h-auto grayscale-0 transition duration-300 group-hover:grayscale"
                                 />
@@ -54,7 +55,8 @@ export default function Team() {
                               className="group relative block overflow-hidden rounded-md"
                             >
                                 <img 
-                                  src={ItaiCohen} 
+                                  src={ItaiCohen}
+                                  loading="lazy"
                                   alt="Profile photo of ItaiCohen" 
                                   className="w-40 h-auto grayscale-0 transition duration-300 group-hover:grayscale"
                                 />
