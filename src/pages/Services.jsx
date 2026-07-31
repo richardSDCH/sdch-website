@@ -1,11 +1,25 @@
+import { useLanguage } from "../i18n/LanguageContext.jsx"
+import Service from "../components/Service";
+
 export default function Services() {
+
+  const { t } = useLanguage()
+  const texts = t.main.services
+
   return (
-    <section className="mx-auto max-w-5xl px-6 py-20">
-      <h1 className="text-3xl font-semibold tracking-tight text-brand-900">Services</h1>
-      <p className="mt-4 max-w-2xl text-brand-900/70">
-        Placeholder — list your services here, one block/card per
-        offering.
+    <section className="mx-auto max-w-4xl px-6 py-24">
+      <h2 className="mt-3 text-3xl font-display font-semibold tracking-tight text-slate-900">
+        {texts.h2}
+      </h2>
+      <p id="intro" className="mt-4 max-w-xl text-lg text-slate-800">
+        {texts.intro}
       </p>
+
+      <div className="mt-16 divide-y divide-slate-200">
+        <Service texts={texts.service1} numeral={"I"}/>
+        <Service texts={texts.service2} numeral={"II"}/>
+        <Service texts={texts.service3} numeral={"III"}/>
+      </div>
     </section>
   )
 }

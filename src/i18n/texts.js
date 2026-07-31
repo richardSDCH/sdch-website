@@ -95,7 +95,34 @@ export const texts = {
                         p2: "He is a Certified Public Accountant and licensed Attorney, bringing deep expertise in financial management, IFRS reporting, and regulatory compliance. He has dual Law degrees (LL.B. & LL.M.) and an MBA in Business Strategy."
                     }
                 }
-            }
+            },
+            services: {
+                h2: "What we offer",
+                intro: "Three ways we work with you; as your representative, your advisor, or your hands-on partner in the room.",
+                service1: {
+                    title: "Trade & Business Representation",
+                    body: "We act as your representative in markets where you don\u2019t yet have a foothold: opening doors, managing local relationships, and speaking for your interests where distance or unfamiliarity would otherwise slow you down. This is presence, not paperwork."
+                },
+                service2: {
+                    title: "Business Consultancy",
+                    body: "Strategic advice on market entry, partner selection, and cross-border operations; grounded in what has actually worked across the markets we\u2019ve worked in, not in generic frameworks. We tell you what we\u2019d do if it were our own business."
+                },
+                service3: {
+                    title: "Project Management & Negotiations",
+                    body: "When a deal needs someone in the room, we\u2019re in the room. We manage the moving parts \u2014timelines, counterparts, competing interests\u2014 and negotiate directly on your behalf, from the first conversation to a signed agreement."
+                }
+            },
+            contact: {
+                h4: "Contact",
+                h2: "Get in touch",
+                p1: "Tell us about your case — we\u2019ll get back to you personally.",
+                nameLabel: "Name",
+                emailLabel: "Email",
+                messageLabel: "Message",
+                button: { sending: "Sending...", send: "Send message" },
+                thankYou: "Thank you! Your message has been sent.",
+                error: "Something went wrong. Please try again, or email us directly at ",
+            },
         },
         footer: {
             copyright: "All rights reserved.",
@@ -209,7 +236,34 @@ export const texts = {
                         p2: "Er ist Certified Public Accountant sowie zugelassener Rechtsanwalt und verfügt über fundierte Expertise in den Bereichen Finanzmanagement, IFRS-Berichterstattung und regulatorische Compliance. Er besitzt zwei juristische Abschlüsse (LL.B. und LL.M.) sowie einen MBA mit Schwerpunkt Unternehmensstrategie."
                     }
                 }
-            }
+            },
+            services: {
+                h2: "Was wir anbieten",
+                intro: "Es gibt drei Arten der Zusammenarbeit mit uns: als Ihr Vertreter, als Ihr Berater oder als Ihr Partner, der direkt vor Ort tatkräftig mit anpackt.",
+                service1: {
+                    title: "Handels- und Wirtschaftsvertretung",
+                    body: "Wir treten als Ihre Vertretung in Märkten auf, in denen Sie noch keinen Fuß gefasst haben: Wir öffnen Türen, pflegen lokale Beziehungen und vertreten Ihre Interessen dort, wo Sie sonst durch Distanz oder mangelnde Marktkenntnis ausgebremst würden. Das bedeutet echte Präsenz statt bloßer Schreibtischarbeit."
+                },
+                service2: {
+                    title: "Unternehmensberatung",
+                    body: "Strategische Beratung zu Markteintritt, Partnerwahl und grenzüberschreitenden Aktivitäten; basierend auf bewährten Praxisansätzen aus den Märkten, in denen wir tätig waren, statt auf generischen Konzepten. Wir sagen Ihnen, wie wir handeln würden, wenn es unser eigenes Unternehmen wäre."
+                },
+                service3: {
+                    title: "Projektmanagement und Verhandlungen",
+                    body: "Wenn es bei einem Geschäftsabschluss auf persönliche Präsenz vor Ort ankommt, sind wir zur Stelle. Wir steuern die verschiedenen Faktoren \u2014Zeitpläne, Verhandlungspartner und widerstreitende Interessen\u2014 und verhandeln direkt in Ihrem Namen, vom ersten Gespräch bis zur unterzeichneten Vereinbarung."
+                }
+            },
+            contact: {
+                h4: "Kontakt",
+                h2: "Kontaktieren Sie uns",
+                p1: "Erzählen Sie uns von Ihrem Fall. Wir melden uns persönlich bei Ihnen.",
+                nameLabel: "Name",
+                emailLabel: "Email",
+                messageLabel: "Nachricht",
+                button: { sending: "Wird gesendet...", send: "Nachricht senden" },
+                thankYou: "Vielen Dank! Ihre Nachricht wurde gesendet.",
+                error: "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt per E-Mail unter ",
+            },
         },
         footer: {
             copyright: "Alle Rechte vorbehalten.",
@@ -319,7 +373,34 @@ export const texts = {
                         p2: "Es contador público certificado y abogado habilitado para ejercer, y aporta una amplia experiencia en gestión financiera, informes bajo normas NIIF (IFRS) y cumplimiento normativo. Cuenta con doble titulación en Derecho (LL.B. y LL.M.) y un MBA en Estrategia Empresarial."
                     }
                 }
-            }
+            },
+            services: {
+                h2: "Qué ofrecemos",
+                intro: "Tres formas en las que trabajamos con usted: como su representante, su asesor o su socio colaborador presente en la sala de reuniones.",
+                service1: {
+                    title: "Representación comercial y empresarial",
+                    body: "Actuamos como sus representantes en mercados donde aún no tiene presencia: abrimos puertas, gestionamos relaciones locales y defendemos sus intereses en situaciones donde la distancia o el desconocimiento del entorno podrían frenar su avance. Se trata de presencia real, no de trámites administrativos."
+                },
+                service2: {
+                    title: "Consultoría de negocios",
+                    body: "Asesoramiento estratégico sobre entrada en el mercado, selección de socios y operaciones transfronterizas, basado en lo que realmente ha funcionado en los mercados donde hemos operado, y no en marcos teóricos genéricos. Le decimos qué haríamos nosotros si fuera nuestra propia firma."
+                },
+                service3: {
+                    title: "Gestión de proyectos y negociaciones",
+                    body: "Cuando una operación requiere presencia física, ahí estamos. Gestionamos todos los elementos en juego \u2014plazos, contrapartes e intereses contrapuestos\u2014 y negociamos directamente en su nombre, desde la conversación inicial hasta la firma del acuerdo."
+                }
+            },
+            contact: {
+                h4: "Contacto",
+                h2: "Póngase en contacto con nosotros",
+                p1: "Cuéntenos sobre su caso. Nos pondremos en contacto con usted personalmente.",
+                nameLabel: "Nombre",
+                emailLabel: "Correo electrónico",
+                messageLabel: "Mensaje",
+                button: { sending: "Enviando...", send: "Enviar mensaje" },
+                thankYou: "Gracias! Su mensaje ha sido enviado.",
+                error: "Algo salió mal. Por favor inténtelo de nuevo o envíenos un correo electrónico directamente a ",
+            },
         },
         footer: {
             copyright: "Todos los derechos reservados.",
