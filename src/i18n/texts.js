@@ -12,7 +12,7 @@ export const texts = {
                     titles: {
                         europeMap: "From Europe to everywhere, and back",
                         deichstrasseChannel: "At the heart of tradition and trade",
-                        stairsPeople: "Depth forged in complex places"
+                        stairsPeople: "Experience forged in complex places"
                     },
                     credits: {
                         photoBy: "Photo by",
@@ -87,7 +87,7 @@ export const texts = {
                     team1: {
                         title: "Managing Director",
                         p1: "For more than 2 decades, Ricardo has hands-on experience across four continents, delivering results in environments where the stakes were real, the structures were imperfect, and standard playbooks did not apply. He is drawn to the kind of work that sits at the intersection of multiple disciplines and cultures; where financial structures meet institutional complexity, where technology meets human resistance to change, and where the solution requires someone who can hold all of it together without losing sight of the goal.",
-                        p2: "He came to Hamburg following the steps of his 2nd great-grandfather, attracted by the unique mixture of modernity and tradition that the Free and Hanseatic city has a global trade hub. Ricardo has a PhD from Barcelona Tech (his research was on digital transformation), a Masters in International Business (EAE Business School), and a CPA as Level-4 financial advisor from the London Institute of Banking and Finance."
+                        p2: "He came to Hamburg following the steps of his 3rd great-grandfather, attracted by the unique mixture of modernity and tradition that the Free and Hanseatic city has a global trade hub. Ricardo has a PhD from Barcelona Tech (his research was on digital transformation), a Masters in International Business (EAE Business School), and a CPA as Level-4 financial advisor from the London Institute of Banking and Finance."
                     },
                     team2: {
                         title: "Senior Advisor",
@@ -126,7 +126,7 @@ export const texts = {
                     titles: {
                         europeMap: "Von Europa in die ganze Welt – und zurück",
                         deichstrasseChannel: "Im Herzen von Tradition und Handel",
-                        stairsPeople: "Tiefe, geschmiedet an komplexen Orten"
+                        stairsPeople: "Erfahrung, gewonnen an komplexen Orten"
                     },
                     credits: {
                         photoBy: "Foto von",
@@ -195,6 +195,19 @@ export const texts = {
                     },
                     p2: "Der internationale Handel unterscheidet sich heute stark von dem vor einigen Jahrzehnten, doch im Kern ist eines gleich geblieben: Waren (und heute auch Dienstleistungen) fließen durch ein Netzwerk geschäftlicher Verbindungen, in dem Vertrauen eine der wertvollsten Währungen darstellt.",
                     p3: "Für SDCH sind Vertrauen, fachliche Exzellenz und das Streben nach langfristigen Geschäftsbeziehungen zentrale Werte. Jede Vermittlung, die wir vornehmen, und jeder Partner, den wir vorschlagen, wurde sorgfältig geprüft. Wir sind davon überzeugt, dass Vertrauenswürdigkeit, Produktqualität und hohe professionelle Standards das wahre Erfolgsrezept für dauerhaften geschäftlichen Erfolg sind."                    
+                },
+                team: {
+                    h3: "Unser Team",
+                    team1: {
+                        title: "Geschäftsführer",
+                        p1: "Ricardo verfügt über mehr als zwei Jahrzehnte praktische Erfahrung auf vier Kontinenten und hat Ergebnisse in Umfeldern erzielt, in denen es um viel ging, die Strukturen unvollkommen waren und Standardlösungen nicht griffen. Er fühlt sich zu Aufgaben hingezogen, die an der Schnittstelle verschiedener Disziplinen und Kulturen angesiedelt sind: dort, wo Finanzstrukturen auf institutionelle Komplexität treffen, wo Technologie auf menschliche Widerstände gegen Veränderungen stößt und wo eine Lösung jemanden erfordert, der all diese Aspekte zusammenhält, ohne das Ziel aus den Augen zu verlieren.",
+                        p2: "Er kam auf den Spuren seines Ururgroßvaters nach Hamburg, angezogen von der einzigartigen Mischung aus Moderne und Tradition, die die Freie und Hansestadt als globales Handelszentrum auszeichnet. Ricardo promovierte an der Barcelona Tech (mit einem Forschungsschwerpunkt auf der digitalen Transformation), erwarb einen Master in International Business an der EAE Business School und ist als CPA sowie als Finanzberater der Stufe 4 beim London Institute of Banking and Finance zertifiziert."
+                    },
+                    team2: {
+                        title: "Seniorberater",
+                        p1: "Itai ist Unternehmer und Führungskraft mit einer nachweislichen Erfolgsbilanz bei der Gründung und Skalierung von Unternehmen in den Bereichen High-Tech, Fintech, Gesundheitswesen, Immobilien und Energie. Er hat Unternehmen und Projekte von der Konzeption bis zur Umsetzung geleitet – einschließlich Kapitalbeschaffung, internationaler Partnerschaften sowie großvolumiger Transaktionen mit Regierungen, multinationalen Konzernen und Investoren.",
+                        p2: "Er ist Certified Public Accountant sowie zugelassener Rechtsanwalt und verfügt über fundierte Expertise in den Bereichen Finanzmanagement, IFRS-Berichterstattung und regulatorische Compliance. Er besitzt zwei juristische Abschlüsse (LL.B. und LL.M.) sowie einen MBA mit Schwerpunkt Unternehmensstrategie."
+                    }
                 }
             }
         },
@@ -223,7 +236,7 @@ export const texts = {
                     titles: {
                         europeMap: "De Europa a todas partes, y de vuelta",
                         deichstrasseChannel: "En el corazón de la tradición y el comercio",
-                        stairsPeople: "Profundidad forjada en lugares complejos"
+                        stairsPeople: "Experiencia forjada en lugares complejos"
                     },
                     credits: {
                         photoBy: "Foto de",
@@ -252,7 +265,7 @@ export const texts = {
                     handsOn: {
                         h2: "Estamos presentes donde realmente se realiza el trabajo",
                         first: {
-                            h3: "Sobre el terreno, no solo por teléfono",
+                            h3: "Sobre el terreno, no sólo por teléfono",
                             p: "El comercio transfronterizo se gana o se pierde en los detalles: en el puerto, en la sala de negociaciones, en la oficina del socio."
                         },
                         second: {
@@ -261,7 +274,7 @@ export const texts = {
                         },
                         third: {
                             h3: "Presente durante todo el proceso de colaboración",
-                            p: "Nos mantenemos involucrados desde la primera conversación hasta el resultado final, no solo durante la presentación de la estrategia."
+                            p: "Nos mantenemos involucrados desde la primera conversación hasta el resultado final, no sólo durante la presentación de la estrategia."
                         }
                     },
                     complexity: {
@@ -292,6 +305,19 @@ export const texts = {
                     },
                     p2: "El comercio internacional es hoy muy distinto a como era hace apenas unas décadas, pero en su esencia permanece algo inalterable: las mercancías (y ahora también los servicios) fluyen a través de una red de vínculos comerciales donde la confianza constituye una de las divisas más valiosas.",
                     p3: "En SDCH, consideramos la confianza, la excelencia profesional y la búsqueda de relaciones comerciales duraderas como nuestros valores fundamentales. Cada introducción que hacemos y cada socio que sugerimos han sido cuidadosamente evaluados. Sabemos que la fiabilidad, la calidad del producto y los elevados estándares profesionales son la verdadera fórmula para alcanzar un éxito empresarial duradero."
+                },
+                team: {
+                    h3: "Nuestro equipo",
+                    team1: {
+                        title: "Director General",
+                        p1: "Durante más de dos décadas, Ricardo ha acumulado experiencia práctica en cuatro continentes, logrando resultados en entornos donde había mucho en juego, las estructuras eran imperfectas y los manuales convencionales no servían. Le atrae el trabajo que se sitúa en la intersección de diversas disciplinas y culturas: donde las estructuras financieras convergen con la complejidad institucional, donde la tecnología choca con la resistencia humana al cambio y donde la solución exige a alguien capaz de articular todos estos elementos sin perder de vista el objetivo.",
+                        p2: "Llegó a Hamburgo siguiendo los pasos de su tatarabuelo, atraído por la singular mezcla de modernidad y tradición que caracteriza a esta Ciudad Libre y Hanseática como centro del comercio mundial. Ricardo es doctor por la Barcelona Tech (con una investigación centrada en la transformación digital), cuenta con un máster en Negocios Internacionales (EAE Business School) y posee la certificación CPA como asesor financiero de nivel 4 otorgada por el London Institute of Banking and Finance."
+                    },
+                    team2: {
+                        title: "Asesor Senior",
+                        p1: "Itai es un emprendedor y líder empresarial con una trayectoria consolidada en la fundación y el escalamiento de empresas en sectores como la alta tecnología, fintech, salud, sector inmobiliario y energía. Ha liderado compañías y proyectos desde la fase de concepción hasta la ejecución, abarcando la captación de capital, alianzas internacionales y operaciones de gran envergadura con gobiernos, corporaciones multinacionales e inversores.",
+                        p2: "Es contador público certificado y abogado habilitado para ejercer, y aporta una amplia experiencia en gestión financiera, informes bajo normas NIIF (IFRS) y cumplimiento normativo. Cuenta con doble titulación en Derecho (LL.B. y LL.M.) y un MBA en Estrategia Empresarial."
+                    }
                 }
             }
         },
