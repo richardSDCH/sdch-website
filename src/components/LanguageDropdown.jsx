@@ -16,15 +16,15 @@ export default function LanguageDropdown() {
   return (
     <Listbox value={language} onChange={setLanguage}>
       <div className="relative">
-        <Listbox.Button className="flex items-center gap-2 rounded-md border border-slate-100 px-3 py-1.5 text-sm text-slate-900/80 hover:text-slate-900 hover:cursor-pointer">
+        <Listbox.Button className="flex items-center gap-1.5 rounded-md border border-slate-100 px-2 py-1.5 text-sm text-slate-900/80 hover:text-slate-900 hover:cursor-pointer sm:gap-2 sm:px-3">
           <img src={current.flag} alt="" className="h-5 w-5 rounded-full object-cover" />
-          <span>{current.label}</span>
+          <span className="hidden sm:inline">{current.label}</span>
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
             <path d="M1 3l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </Listbox.Button>
 
-        <Listbox.Options className="absolute right-0 z-10 mt-2 w-28 rounded-md border border-slate-100 bg-white py-1 shadow-lg focus:outline-none">
+        <Listbox.Options className="absolute right-0 z-10 mt-2 w-32 rounded-md border border-slate-100 bg-white py-1 shadow-lg focus:outline-none">
           {options.map((option) => (
             <Listbox.Option
               key={option.code}

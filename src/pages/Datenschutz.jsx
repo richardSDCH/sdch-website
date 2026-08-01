@@ -11,7 +11,7 @@ export default function Datenschutz() {
           <div id="headline" className="">
             <h2 className="font-semibold pt-10 text-xl text-center text-slate-900 dark:text-slate-300">Datenschutz</h2>
           </div>
-          <div className="w-4/5 mx-auto">
+          <div className="w-11/12 sm:w-4/5 mx-auto">
             <p className="mt-8 text-justify">
                 Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten 
                 (nachfolgend kurz <span className="font-medium text-slate-900">„Daten“</span>) innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte 

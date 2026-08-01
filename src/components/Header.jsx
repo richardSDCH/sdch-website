@@ -26,39 +26,42 @@ export default function Header() {
 
   return (
     <header className="border-b border-brand-100">
-      <div className="flex h-16 items-center justify-between px-10 bg-[#FFF1E4]">
-        <NavLink to="/" className="tracking-tight">
-          <img src={SDCHLogo} alt="SDCH logo" className="h-10"></img>
+      <div className="flex h-16 items-center justify-between gap-3 px-4 bg-[#FFF1E4] sm:px-6 md:px-10">
+        <NavLink to="/" className="tracking-tight shrink-0">
+          <img src={SDCHLogo} alt="SDCH logo" className="h-8 sm:h-10"></img>
         </NavLink>
 
         {/* Desktop nav */}
-        <nav className="hidden gap-8 sm:flex">
+        <nav className="hidden gap-6 md:flex">
           {links.map((link) => (
             <NavLink key={link.to} to={link.to} end={link.end} className={navClass}>
               {link.label}
             </NavLink>
           ))}
         </nav>
-        <LanguageDropdown />
 
-        {/* Mobile toggle */}
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          className="flex h-9 w-9 items-center justify-center rounded-md border border-brand-100 sm:hidden"
-          aria-label="Toggle menu"
-          aria-expanded={open}
-        >
-          <span className="sr-only">Toggle menu</span>
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-            <path d="M2 4.5h14M2 9h14M2 13.5h14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          </svg>
-        </button>
+        <div className="flex items-center gap-2 sm:gap-4">
+          <LanguageDropdown />
+
+          {/* Mobile toggle */}
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-brand-100 md:hidden"
+            aria-label="Toggle menu"
+            aria-expanded={open}
+          >
+            <span className="sr-only">Toggle menu</span>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M2 4.5h14M2 9h14M2 13.5h14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+            </svg>
+          </button>
+        </div>
       </div>
 
       {/* Mobile nav */}
       {open && (
-        <nav className="flex flex-col gap-1 border-t border-brand-100 px-6 py-3 sm:hidden">
+        <nav className="flex flex-col gap-1 border-t border-brand-100 px-4 py-3 md:hidden">
           {links.map((link) => (
             <NavLink
               key={link.to}

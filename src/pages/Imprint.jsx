@@ -11,7 +11,7 @@ export default function Imprint() {
           <div id="headline" className="">
             <h2 className="font-semibold pt-10 text-xl text-center text-slate-900 dark:text-slate-300">Imprint</h2>
           </div>
-          <div className="w-3/4 mx-auto">
+          <div className="w-11/12 sm:w-3/4 mx-auto">
             <h4 className="font-semibold mt-2 mb-1 text-slate-900">Publisher</h4>
             <p className="leading-[1.1] sm:leading-[1.15rem]">
               <span className="font-medium text-slate-900 dark:text-slate-300">SDCH Handelslösungen UG (haftungsbeschränkt)</span><br />

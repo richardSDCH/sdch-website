@@ -11,7 +11,7 @@ export default function Privacy() {
           <div id="headline" className="">
             <h2 className="font-semibold pt-10 text-xl text-center text-slate-900 dark:text-slate-300">Política de privacidad</h2>
           </div>
-          <div className="w-4/5 mx-auto">
+          <div className="w-11/12 sm:w-4/5 mx-auto">
             <p className="mt-8 text-justify">
                 Esta política de privacidad explica el tipo, el alcance y el propósito del procesamiento de datos personales (en lo sucesivo, 
                 <span className="font-medium text-slate-900">“datos”</span>) dentro de nuestra oferta en línea y los sitios web, funciones y contenido asociados, así como presencias en línea 

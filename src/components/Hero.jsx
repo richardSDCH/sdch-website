@@ -110,28 +110,14 @@ export default function Hero() {
         </span>
       </div>
 
-      {/* Slide indicators */}
-      <div className="absolute bottom-6 left-1/2 flex justify-between w-full -translate-x-1/2 gap-2">
-        <div className="w-160"></div>
-        {/* {slides.map((slide, i) => (
-            <button
-              key={slide.src}
-              type="button"
-              onClick={() => setActive(i)}
-              aria-label={`Show slide ${i + 1}: ${slide.title}`}
-              aria-current={i === active}
-              className={[
-                'h-2 w-2 rounded-full transition-colors',
-                i === active ? 'bg-white' : 'bg-white/40 hover:bg-white/70',
-              ].join(' ')}
-            />
-        ))} */}
-        <div className="w-160 flex pb-6">
+      {/* Photo credit, one per slide, crossfading with the image */}
+      <div className="absolute inset-x-4 bottom-3 sm:inset-x-10 sm:bottom-6">
+        <div className="relative h-4 text-right sm:h-5">
           {slides.map((slide, i) => (
-            <p 
+            <p
               key={slide.author}
               className={[
-                'absolute right-10 text-sm font-display tracking-tight text-white transition-opacity duration-1000 ease-in-out motion-reduce:transition-none sm:text-xs md:text-sm',
+                'absolute inset-x-0 truncate text-xs font-display tracking-tight text-white transition-opacity duration-1000 ease-in-out motion-reduce:transition-none sm:text-sm',
                 i === active ? 'opacity-100' : 'opacity-0 pointer-events-none',
               ].join(' ')}
               aria-hidden={i !== active}

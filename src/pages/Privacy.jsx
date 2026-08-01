@@ -11,7 +11,7 @@ export default function Privacy() {
           <div id="headline" className="">
             <h2 className="font-semibold pt-10 text-xl text-center text-slate-900 dark:text-slate-300">Privacy Policy</h2>
           </div>
-          <div className="w-4/5 mx-auto">
+          <div className="w-11/12 sm:w-4/5 mx-auto">
             <p className="mt-8 text-justify">
                 This privacy policy explains the type, scope and purpose of the processing of personal data (hereinafter referred to as 
                 <span className="font-medium dark:text-slate-300"> “data”</span>) within the services provided by our firm <span className="font-medium dark:text-slate-300">“SDCH”</span> and the associated websites, functions and content as well as external online presences, 

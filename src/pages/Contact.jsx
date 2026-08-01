@@ -48,7 +48,7 @@ export default function Contact() {
   }
 
   return (
-    <section className="mx-auto max-w-2xl px-6 py-24">
+    <section className="mx-auto max-w-2xl px-6 py-12 sm:py-24">
       <h4 className="text-sm font-medium uppercase tracking-wide text-brand-600">
         {texts.h4}
       </h4>

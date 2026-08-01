@@ -7,7 +7,7 @@ export default function Services() {
   const texts = t.main.services
 
   return (
-    <section className="mx-auto max-w-4xl px-6 py-24">
+    <section className="mx-auto max-w-4xl px-6 py-12 sm:py-24">
       <h2 className="mt-3 text-3xl font-display font-semibold tracking-tight text-slate-900">
         {texts.h2}
       </h2>
