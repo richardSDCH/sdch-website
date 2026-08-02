@@ -1,5 +1,5 @@
 import { useLanguage } from '../i18n/LanguageContext.jsx'
-import SalomonDCohenHenriquez from "/resources/images/SalomonDanielCohenHenriquez.png"
+import { images } from "../data/images.js"
 
 export default function History() {
 
@@ -22,7 +22,7 @@ export default function History() {
                 </div>
                 <div className="w-full md:w-1/4">
                     <div className="w-fit mx-auto md:mx-0">
-                    <img src={SalomonDCohenHenriquez} loading="lazy" alt="Portrait photo of Salomon Daniel Cohen Henriquez" className="h-48 sm:h-60 mx-auto rounded-xs"/>
+                    <img src={images.salomonDCH.src} loading="lazy" alt={images.salomonDCH.alt} className="h-48 sm:h-60 mx-auto rounded-xs"/>
                     <h4 className="font-display font-semibold text-sm text-slate-900 mt-2 text-center md:text-left">Salomon Daniel Cohen Henriquez</h4>
                     <h4 className="text-sm font-normal text-center md:text-left">Curaçao 1830 - Hamburg 1908</h4>
                     </div>

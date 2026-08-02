@@ -1,13 +1,24 @@
 import { useLanguage } from "../i18n/LanguageContext.jsx"
+import { usePreloadImages } from "../hooks/usePreloadImages.js";
 import Division from "../components/Division";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { images } from "../data/images";
 
+
 export default function Home() {
 
   const { t } = useLanguage()
   const texts = t.main.home.divisions
+
+  usePreloadImages([
+    images.businessAdvice.src,
+    images.complexity.src,
+    images.globalReach.src,
+    images.itaiC.src,
+    images.ricardoH.src,
+    images.salomonDCH.src,
+  ])
 
   return (
     <div>

@@ -1,7 +1,6 @@
 import { useLanguage } from '../i18n/LanguageContext.jsx'
-import RicardoHenriquez from "/resources/images/RicardoHenriquez.png"
-import ItaiCohen from "/resources/images/ItaiCohen.png"
 import { FaLinkedinIn } from "react-icons/fa6";
+import { images } from "../data/images.js";
 
 
 export default function Team() {
@@ -24,9 +23,9 @@ export default function Team() {
                               className="group relative mx-auto block w-40 overflow-hidden rounded-md sm:mx-0"
                             >
                                 <img
-                                  src={RicardoHenriquez}
+                                  src={images.ricardoH.src}
                                   loading="lazy"
-                                  alt="Profile photo of Ricardo Henriquez"
+                                  alt={images.ricardoH.alt}
                                   className="w-40 h-auto grayscale-0 transition duration-300 group-hover:grayscale"
                                 />
                                 <div className="absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 transition duration-300 group-hover:bg-black/10 group-hover:opacity-100">
@@ -55,9 +54,9 @@ export default function Team() {
                               className="group relative mx-auto block w-40 overflow-hidden rounded-md sm:mx-0"
                             >
                                 <img
-                                  src={ItaiCohen}
+                                  src={images.itaiC.src}
                                   loading="lazy"
-                                  alt="Profile photo of ItaiCohen"
+                                  alt={images.itaiC.alt}
                                   className="w-40 h-auto grayscale-0 transition duration-300 group-hover:grayscale"
                                 />
                                 <div className="absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 transition duration-300 group-hover:bg-black/10 group-hover:opacity-100">

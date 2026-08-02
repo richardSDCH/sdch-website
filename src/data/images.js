@@ -36,6 +36,18 @@ export const images = {
         src: "/resources/images/Complexity.png",
         author: "Annie Spratt",
         alt: "Man working with a laptop computer"
+    },
+    salomonDCH: {
+        src: "/resources/images/SalomonDanielCohenHenriquez.png",
+        alt: "Portrait photo of Salomon Daniel Cohen Henriquez"
+    },
+    ricardoH: {
+        src: "/resources/images/RicardoHenriquez.png",
+        alt: "Profile photo of Ricardo Henriquez"
+    },
+    itaiC: {
+        src: "/resources/images/ItaiCohen.png",
+        alt: "Profile photo of Itai Cohen"
     }
 }
 
